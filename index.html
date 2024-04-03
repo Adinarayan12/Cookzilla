@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax effect website</title>
+    <title>Cookzilla</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,9 +11,8 @@
     <header>
         <nav>
                     <li class="dropdown">
-                        <a href="#" class="dropbtn">Dropdown <i class="fas fa-caret-down"></i></a>
+                        <a href="#" class="dropbtn">Menu<i class="fas fa-caret-down"></i></a>
                         <div class="dropdown-content">
-                            <a href="#">Home</a>
                             <a href="#">Recipe</a>
                             <a href="#">About Us</a>
                         </div>
@@ -23,10 +22,10 @@
             </div>
             <ul>
                 <li>
-                    <a href="#">Login</a>
+                    <a href="login.html">Login</a>
                 </li>
                 <li>
-                    <a href="#">Signin</a>
+                    <a href="login.html">Register</a>
                 </li>
                 <li>
                     <a href="#">
@@ -37,38 +36,71 @@
         </nav>
     </header>
     <main>
-        <img src="original.png" class="parallax bg-img">
+        <img src="original.png" class="bg-img">
         <div class="text parallax">
             <h1>COOKZILLA</h1>
         </div>  
     </main>
-    <div class="container">
-        <div class="greytransparency">
-            <div id="trend">
-                <form action="#" method="GET">
-                    <input type="text" name="search" placeholder="Search Recipe...">
-                </form> 
-                <div class="head">
-                    <h1>Find some of our cuisines here</h1>
-                </div>
-                <div class="trendFood">
-                    <div class="trends">
-                        <img src="Italiancuisine.jpg"  alt="">
-                        <img src="Indiancuisine.jpg" alt="">
-                        <img src="Japanesecuisine.jpg" alt="">
-                        <img src="American.jpg" alt="">
-                    </div>
-                    <div class="trends">
-                        <img src="chickentikka.jpg" alt="">
-                        <img src="Frenchcuisine.jpg" alt="">
-                        <img src="Chinesecuisine.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            
+    <section class="sec-1 show-animate">
+        <h1 class="animate">Welcome to Cookzilla</h1>
+        <p class="animate">Get your personalized recipe here</p>
+    </section>
+    <section class="sec-2">
+        <h1 class="animate">Give it a Try!!!1</h1>
+        <p class="animate">Try our ai integrated recipe finder</p>
+    </section>
+    <a href="searching.html">
+        <button class="c-button c-button--gooey"> Recipe's
+          <div class="c-button__blobs">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </button>
+      </a>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: flex; height: 0; width: 0;">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+            <feBlend in="SourceGraphic" in2="goo"></feBlend>
+          </filter>
+        </defs>
+      </svg>
+    <section class="sec-4">
+        <h1 class="animate">Discover our recipes</h1>
+        <p class="animate">Find different cuisines</p>
+    </section>
+    <section class="sec-5">
+        <div class="images">
+            <img src = "American.jpg" alt="" class="animate" style="--i:0;">
+            <img src = "chickentikka.jpg" alt="" class="animate" style="--i:1;">
+            <img src = "Chinesecuisine.jpg" alt="" class="animate" style="--i:2;">
+            <img src = "Frenchcuisine.jpg" alt="" class="animate" style="--i:3;">
+            <img src = "Indiancuisine.jpg" alt="" class="animate" style="--i:4;">
+
         </div>
-        
+    </section>
+    
+
+
+
+    <div class="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Just some students doing DBMS project</p>
+        <div class="social-icons">
+            <ul>
+                <!-- Instagram Icon -->
+                <li></li><a href="#"><img src="instagram-icon.jpg" alt="Instagram"></a>
+                <!-- Facebook Icon -->
+                <li></li><a href="#"><img src="facebook-icon.webp" alt="Facebook"></a>
+                <!-- Twitter Icon -->
+                <li></li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            </ul>
+        </div>
     </div>
+</div>
     
     <script src="index.js"></script>
 </body>
