@@ -137,18 +137,19 @@ header ul a {
         list-style-type: decimal;
     }
     .wrapper::-webkit-scrollbar {
-        width: 15px; /* Set the width of the scrollbar */
+        width: 0px; /* Set the width of the scrollbar */
     }
     
     .wrapper::-webkit-scrollbar-track {
         background: #f1f1f1;
-        border-radius: 4px ; /* Set the background color of the scrollbar track */
+        border-radius: 10px ; /* Set the background color of the scrollbar track */
+        width: 20px;
     }
     
     .wrapper::-webkit-scrollbar-thumb {
         background: #888; /* Set the color of the scrollbar thumb */
         border-radius: 5px;
-        width:10px; 
+
     }
     
     .wrapper::-webkit-scrollbar-thumb:hover {
