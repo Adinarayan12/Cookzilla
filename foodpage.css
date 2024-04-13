@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("foodbg.jpg"); /* Replace "your-image-file.jpg" with your actual image file name */
+    background-size: cover;
+    z-index: -1; /* Ensure the background image stays behind other content */
+}
+
+header {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.83rem;
+    margin-right: 25px;
+}
+
+.spaghetti {
+    aspect-ratio: auto;
+    margin-top: 80px;
+    height: 550px;
+    border-radius: 20px;
+    margin-left:30px;
+}
+.wrapper{
+
+        position: absolute;
+        top: 80px; /* Adjust this value to position it below the header */
+        right: 90px; /* Position it on the right side */
+        width: 980px;
+        height: 570px;
+        background: #dbd9d91a;
+        border: 2px solid rgba(238, 231, 231, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+    .wrapper h1 {
+        color: white;
+        position: absolute;
+        top: 25px; /* Adjust as needed */
+        left: 50%; /* Position it in the center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        text-decoration: underline;
+        font-family: "Poppins",sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .ingredients{
+        color:white;
+        position:absolute;
+        left:0;
+        top:120px;
+        margin-left:20px;
+        text-decoration: underline;
+    }
+    .ingredientsul {
+        list-style-type: none;
+        padding: 0;
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 170px; /* Adjust as needed */
+        margin-left: 20px; /* Adjust as needed */
+    }
+    .wrapper ul li {
+        margin-bottom: 5px;
+        margin-left:20px;
+        list-style-type: circle;
+    }
+    .instructions{
+        color:white;
+        position:absolute;
+        left:0;
+        top:490px;
+        margin-left:20px;
+        text-decoration: underline;
+
+    }
+    .instructionsol{
+        list-style-type: none;
+        padding: 0;
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 550px; /* Adjust as needed */
+        margin-left: 20px; /* Adjust as needed */
+
+    }
+    .wrapper ol li {
+        margin-bottom: 5px;
+        margin-left:20px;
+        list-style-type: decimal;
+    }
+    .wrapper::-webkit-scrollbar {
+        width: 15px; /* Set the width of the scrollbar */
+    }
+    
+    .wrapper::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px ; /* Set the background color of the scrollbar track */
+    }
+    
+    .wrapper::-webkit-scrollbar-thumb {
+        background: #888; /* Set the color of the scrollbar thumb */
+        border-radius: 5px;
+        width:10px; 
+    }
+    
+    .wrapper::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Set the color of the scrollbar thumb on hover */
+    }
+    
